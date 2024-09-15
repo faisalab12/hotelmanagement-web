@@ -14,7 +14,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/loginplaza', Login::class);
+Route::get('/login', Login::class);
 
 Route::get('/Dashboard', Dashboard::class);
 
