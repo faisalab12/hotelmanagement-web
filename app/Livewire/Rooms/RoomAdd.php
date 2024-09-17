@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Rooms;
 
+use App\Models\Hotel;
 use App\Models\Room;
 use App\Models\RoomType;
 use Livewire\Attributes\Title;
@@ -13,13 +14,16 @@ class RoomAdd extends Component
 
     public $name_room;
     public $room_type_id;
+    public $hotel_id;
+    public $price;
     public $floor;
 
 
     public function render()
     {
         return view('livewire.rooms.room-add', [
-            'roomTypes' => RoomType::all()
+            'roomTypes' => RoomType::all(),
+            'hotels' => Hotel::all()
         ]);
     }
 

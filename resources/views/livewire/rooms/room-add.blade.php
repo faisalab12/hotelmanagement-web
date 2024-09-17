@@ -43,13 +43,37 @@
                                 <div class="row mb-3">
                                     <label class="col-sm-2 col-form-label">Type Room</label>
                                     <div class="col-sm-10">
-                                        <select wire:model="room_type_id" class="form-control" required>
+                                        <select wire:model="room_type_id" class="form-control" aria-label="Default select example" required>
                                             <option>Open this select room type</option>
+
                                             @foreach($roomTypes as $roomType)
-                                            <option value="{{ $roomType->id }}">{{ $roomType->name }}</option>
+                                            <option value="{{ $roomType->id }}"> {{ $roomType->name_type }} </option>
                                             @endforeach
+
                                         </select>
 
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label">Hotel</label>
+                                    <div class="col-sm-10">
+                                        <select wire:model="hotel_id" class="form-control" aria-label="Default select example" required>
+                                            <option>Open this select room type</option>
+
+                                            @foreach($hotels as $hotel)
+                                            <option value="{{ $hotel->id }}"> {{ $hotel->name_hotel }} </option>
+                                            @endforeach
+
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="inputNumber" class="col-sm-2 col-form-label" required>Price</label>
+                                    <div class="col-sm-10">
+                                        <input wire:model="price" type="number" class="form-control">
                                     </div>
                                 </div>
 
@@ -65,7 +89,7 @@
                                     <label class="col-sm-2 col-form-label"></label>
                                     <div class="col-sm-10">
                                         <button type="submit" class="btn btn-primary">Add</button>
-                                        <a wire:navigate href="/Daftar-Hotel" class="btn btn-danger">Cancel</a>
+                                        <a wire:navigate href="/Room-List" class="btn btn-danger">Cancel</a>
                                     </div>
                                 </div>
 

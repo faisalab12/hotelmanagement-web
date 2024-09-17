@@ -9,4 +9,9 @@ class Hotel extends Model
 {
     protected $guarded = ['id'];
     use HasFactory;
+
+    // public function rooms()
+    // {
+    //     return $this->hasMany(Room::class);
+    // }
 }

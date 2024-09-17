@@ -282,14 +282,14 @@
             </li><!-- End Dashboard Nav -->
 
             <li class="nav-item">
-                <a wire:navigate class="nav-link " href="/Daftar-Hotel">
+                <a wire:navigate class="nav-link collapsed" href="/Daftar-Hotel">
                     <i class="bi bi-file-earmark"></i>
                     <span> Hotel List</span>
                 </a>
             </li><!-- End Blank Page Nav -->
 
             <li class="nav-item">
-                <a wire:navigate class="nav-link " href="/Room-List">
+                <a wire:navigate class="nav-link collapsed" href="/Room-List">
                     <i class="bi bi-file-earmark"></i>
                     <span> Room List</span>
                 </a>
