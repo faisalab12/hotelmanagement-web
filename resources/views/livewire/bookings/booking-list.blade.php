@@ -3,11 +3,11 @@
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1> Room List</h1>
+            <h1> Booking List</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/Dashboard">Home</a></li>
-                    <li class="breadcrumb-item active"><a href="/Room-List">Room List</a></li>
+                    <li class="breadcrumb-item active"><a href="/Booking-List">Booking List</a></li>
                 </ol>
             </nav>
         </div><!-- End Page Title -->
@@ -27,7 +27,7 @@
                                         </div>
                                     </div>
                                     <div class="col-6">
-                                        <a wire:navigate href="/Add-Room" class="btn btn-primary float-end">Add Room</a>
+                                        <a wire:navigate href="/Add-Room" class="btn btn-primary float-end">Add Booking</a>
                                     </div>
                                 </div>
                             </div>
@@ -39,24 +39,20 @@
                                     <tr>
                                         <!-- <th scope="col">#</th> -->
                                         <th>
-                                            Name Room
+                                            ID
                                         </th>
-                                        <th>Type Room</th>
-                                        <th>Hotel</th>
-                                        <th>Price</th>
-                                        <th>Floor</th>
+                                        <th>User</th>
+                                        <th>Booking Date</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($rooms as $room)
+                                    @foreach($bookings as $booking)
                                     <tr>
                                         <!-- <th scope="row">1</th> -->
-                                        <td>{{ $room -> name_room }}</td>
-                                        <td>{{ $room -> roomType -> name_type }}</td>
-                                        <td>{{ $room -> hotel -> name_hotel }}</td>
-                                        <td>{{ $room -> price}}</td>
-                                        <td>{{ $room -> floor}}</td>
+                                        <td>{{ $booking -> id }}</td>
+                                        <td>{{ $booking -> user -> name }}</td>
+                                        <td>{{ $booking -> booking_date }}</td>
                                         <td></td>
 
                                     </tr>

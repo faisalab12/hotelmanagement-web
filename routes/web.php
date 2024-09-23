@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Bookings\BookingList;
 use App\Livewire\Dashboard;
 use App\Livewire\Hotels\HotelAdd;
 use App\Livewire\Hotels\HotelEdit;
@@ -27,6 +28,8 @@ Route::get('/Daftar-Hotel/{id}/Edit', HotelEdit::class);
 Route::get('/Room-List', RoomList::class);
 
 Route::get('/Add-Room', RoomAdd::class);
+
+Route::get('/Booking-List', BookingList::class);
 
 
 

@@ -62,7 +62,7 @@
                                             <option>Open this select room type</option>
 
                                             @foreach($hotels as $hotel)
-                                            <option value="{{ $hotel->id }}"> {{ $hotel->name_hotel }} </option>
+                                            <option value="{{ $hotel -> id }}"> {{ $hotel -> name_hotel }} </option>
                                             @endforeach
 
                                         </select>

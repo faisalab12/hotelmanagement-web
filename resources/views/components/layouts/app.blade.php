@@ -295,6 +295,13 @@
                 </a>
             </li><!-- End Blank Page Nav -->
 
+            <li class="nav-item">
+                <a wire:navigate class="nav-link collapsed" href="/Booking-List">
+                    <i class="bi bi-file-earmark"></i>
+                    <span> Booking List</span>
+                </a>
+            </li><!-- End Blank Page Nav -->
+
             <!-- <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
                     <i class="bi bi-menu-button-wide"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i>
