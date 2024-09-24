@@ -8,7 +8,7 @@ use Livewire\Component;
 
 class BookingList extends Component
 {
-    #[Title('Add Hotel')]
+    #[Title('Booking List')]
 
     public function render()
     {

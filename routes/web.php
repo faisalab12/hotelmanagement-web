@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Bookings\BookingAdd;
 use App\Livewire\Bookings\BookingList;
 use App\Livewire\Dashboard;
 use App\Livewire\Hotels\HotelAdd;
@@ -31,6 +32,7 @@ Route::get('/Add-Room', RoomAdd::class);
 
 Route::get('/Booking-List', BookingList::class);
 
+Route::get('/Add-Booking', BookingAdd::class);
 
 
 

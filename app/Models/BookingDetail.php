@@ -13,4 +13,9 @@ class BookingDetail extends Model
     {
         return $this->belongsTo(Booking::class);
     }
+
+    public function room()
+    {
+        return $this->belongsTo(Room::class);
+    }
 }

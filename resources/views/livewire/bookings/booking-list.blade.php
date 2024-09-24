@@ -27,7 +27,7 @@
                                         </div>
                                     </div>
                                     <div class="col-6">
-                                        <a wire:navigate href="/Add-Room" class="btn btn-primary float-end">Add Booking</a>
+                                        <a wire:navigate href="/Add-Booking" class="btn btn-primary float-end">Add Booking</a>
                                     </div>
                                 </div>
                             </div>
@@ -43,6 +43,7 @@
                                         </th>
                                         <th>User</th>
                                         <th>Booking Date</th>
+                                        <th>Room</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -53,6 +54,13 @@
                                         <td>{{ $booking -> id }}</td>
                                         <td>{{ $booking -> user -> name }}</td>
                                         <td>{{ $booking -> booking_date }}</td>
+                                        <td>
+                                            @foreach ($booking -> bookingDetails as $detail)
+
+                                            <p>{{ $detail->room->name_room }} (Rp.{{ $detail->room->price }}) </p>
+
+                                            @endforeach
+                                        </td>
                                         <td></td>
 
                                     </tr>

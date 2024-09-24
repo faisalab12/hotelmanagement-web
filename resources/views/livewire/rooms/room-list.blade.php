@@ -55,7 +55,7 @@
                                         <td>{{ $room -> name_room }}</td>
                                         <td>{{ $room -> roomType -> name_type }}</td>
                                         <td>{{ $room -> hotel -> name_hotel }}</td>
-                                        <td>{{ $room -> price}}</td>
+                                        <td>Rp. {{ $room -> price}}</td>
                                         <td>{{ $room -> floor}}</td>
                                         <td></td>
 
