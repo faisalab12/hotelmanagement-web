@@ -22,7 +22,7 @@ class HotelList extends Component
             'hotels' => Hotel::where('name_hotel', 'like', '%' . $this->search . '%')
 
 
-                ->paginate(2)
+                ->paginate(10)
 
         ]);
     }

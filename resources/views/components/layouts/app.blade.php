@@ -276,28 +276,28 @@
 
             <li class="nav-item">
                 <a wire:navigate class="nav-link collapsed" href="/Dashboard">
-                    <i class="bi bi-grid"></i>
+                    <i class="ri-home-4-line"></i>
                     <span>Home</span>
                 </a>
             </li><!-- End Dashboard Nav -->
 
             <li class="nav-item">
                 <a wire:navigate class="nav-link collapsed" href="/Daftar-Hotel">
-                    <i class="bi bi-file-earmark"></i>
+                    <i class="ri-hotel-line"></i>
                     <span> Hotel List</span>
                 </a>
             </li><!-- End Blank Page Nav -->
 
             <li class="nav-item">
                 <a wire:navigate class="nav-link collapsed" href="/Room-List">
-                    <i class="bi bi-file-earmark"></i>
+                    <i class="ri-hotel-bed-line"></i>
                     <span> Room List</span>
                 </a>
             </li><!-- End Blank Page Nav -->
 
             <li class="nav-item">
                 <a wire:navigate class="nav-link collapsed" href="/Booking-List">
-                    <i class="bi bi-file-earmark"></i>
+                    <i class="bx bxs-book"></i>
                     <span> Booking List</span>
                 </a>
             </li><!-- End Blank Page Nav -->
