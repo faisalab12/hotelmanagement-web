@@ -53,8 +53,6 @@
                                     <input wire:model="booking_date" type="date" class="form-control">
                                 </div>
                             </div>
-
-
                             @if($booking_date)
                             <br>
                             <h4><b>Available Room</b></h4>
@@ -105,10 +103,6 @@
                     </div>
 
                 </div>
-
-
-
-
 
             </div>
         </section>
